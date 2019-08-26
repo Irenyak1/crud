@@ -33,7 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //set public folder as static folder for static file
 app.use('/assets',express.static(__dirname + '/public'));
  
-//route for homepage
+//route for homepagez
 app.get('/',(req, res) => {
   let sql = "SELECT * FROM product";
   let query = conn.query(sql, (err, results) => {
